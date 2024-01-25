@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap');
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  min-height: 100svh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ddd;
+  font-size: 1.6rem;
+  font-family: 'Poppins';
+
+}
+main {
+  width: 650px;
+  background-color: #FFF;
+  border-radius: 2rem;
+  border-bottom-right-radius: 15rem;
+  padding: 5rem;
+}
+
+.input-fields {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 70%;
+  gap: .3rem 2.5rem;
+  font-family: 'Poppins';
+  color: hsl(0, 1%, 44%);
+  font-weight: bold;
+
+    .input-fields__label {
+      font-size: 1rem;
+    }
+    .input-fields__input {
+      width: 100%;
+      appearance: none;
+      -moz-appearance: textfield;
+      font-size: 2rem;
+      border: 1px solid hsl(0, 0%, 86%);
+      border-radius: .5rem;
+      font-weight: bold;
+      padding: 1rem 1.5rem;
+    
+    }
+    .input-fields__input:focus {
+      outline: none;
+    }
+    
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      appearance: none;
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    .error-message {
+      color: #c50000;
+      font-size: .9rem;
+      font-weight: 400;
+      font-style: italic;
+      display: none;
+    }
+    .future-error {
+      border-bottom: 1px solid #c50000;
+      grid-column: span 3;
+      text-align: center;
+    }
+}
+
+.flexbox {
+  display: flex;
+  align-items: center;
+  height: 7rem;
+  position: relative;
+
+    .flexbox__divider {
+      height: 1px;
+      width: 100%;
+      margin-left: 0;
+      border: 1px solid hsl(0, 0%, 86%);
+      
+    }
+    .flexbox__logo {
+      background-color: hsl(259, 100%, 65%);
+      position: absolute;
+      right: 0;
+      border: 0;
+      border-radius: 50%;
+      width: 7rem;
+      aspect-ratio: 1 / 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .button-image {
+      width: 35px;
+    }
+}
+
+
+
+.time-alive {
+  font-size: 7rem;
+  font-weight: 800;
+  font-style: italic;
+  margin: -3rem 0;
+}
+.time-alive__numbers {
+  color: hsl(259, 100%, 65%);
+}
+@media screen and (max-width: 430px) {
+  main {
+    width: 100%;
+    margin: 1rem;
+    padding: 5rem 2rem;
+  }
+  .flexbox {
+    margin: 2rem 0;
+    .flexbox__logo {
+      right: 50%;
+      width: 6rem;
+      transform: translateX(50%);
+    }
+  }
+
+  .time-alive {
+    font-size: 5.5rem;
+    margin: -2rem 0;
+  }
+
+
+  .input-fields {
+    width: 100%;
+    gap: .3rem 1.5rem;
+      .input-fields__label {
+        font-size: 1.5rem;
+      }
+      .input-fields__input {
+        width: 100%;
+        font-size: 2rem;
+        padding: 1rem 1.5rem;
+      
+      }
+  }
+  
+}

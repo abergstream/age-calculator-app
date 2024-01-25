@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Age Calculator App</title>
+  <script src="js/script.js" defer></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="icon" type="image/png" href="/assets/images/favicon-32x32.png" />
+</head>
+<body>
+  <main>
+    <div class="input-fields">
+        <label id="labelDay" class="input-fields__label" for="dayInput">DAY</label>
+        <label id="labelMonth" class="input-fields__label" for="monthInput">MONTH</label>
+        <label id="labelYear" class="input-fields__label" for="yearInput">YEAR</label>
+
+        <input id="dayInput" class="input-fields__input" type="number" max="31" placeholder="DD">
+        <input id="monthInput" class="input-fields__input" type="number" max="12" placeholder="MM">
+        <input id="yearInput" class="input-fields__input" type="number" placeholder="YYYY">
+
+        <div><span id="errorDay" class="error-message">Must be a valid day</span></div>
+        <div><span id="errorMonth" class="error-message">Must be a valid month</span></div>
+        <div><span id="errorYear" class="error-message">Must be a valid year</span></div>
+
+        <div class="error-message future-error">Must be in the past</div>
+    </div>
+
+    <div class="flexbox">
+      <hr class="flexbox__divider">
+      <div class="flexbox__logo">
+        <img class="button-image" src="assets/images/icon-arrow.svg" alt="arrowIcon">
+      </div>
+    </div>  
+ 
+    <div class="time-alive">
+      <span class="time-alive__numbers" id="aliveYears">--</span>
+      years
+    </div>
+    <div class="time-alive">
+      <span class="time-alive__numbers" id="aliveMonths">--</span>
+      months
+    </div>
+    <div class="time-alive">
+      <span class="time-alive__numbers" id="aliveDays">--</span>
+      days
+    </div>
+  </main>
+</body>
+</html>
